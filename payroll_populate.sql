@@ -1,0 +1,86 @@
+use payroll;
+select * from employee;
+insert into employee (emp_id, emp_name, email, name_grade, join_date) values (1, 78, 'zmillion0@ehow.com', 'Bengal vulture', '2018-10-31 04:45:59');
+insert into employee (emp_id, emp_name, email, name_grade, join_date) values (2, 35, 'rplatt1@goo.ne.jp', 'Vulture, turkey', '2019-06-10 15:45:51');
+insert into employee (emp_id, emp_name, email, name_grade, join_date) values (3, 76, 'khardacre2@amazon.co.uk', 'Anaconda (unidentified)', '2018-12-30 10:18:44');
+insert into employee (emp_id, emp_name, email, name_grade, join_date) values (4, 55, 'rpacitti3@google.com', 'Waterbuck, defassa', '2018-09-13 22:52:23');
+insert into employee (emp_id, emp_name, email, name_grade, join_date) values (5, 59, 'fbelliard4@mapy.cz', 'Bear, american black', '2019-08-15 07:32:46');
+insert into employee (emp_id, emp_name, email, name_grade, join_date) values (6, 5, 'djalland5@cdbaby.com', 'Rat, desert kangaroo', '2018-10-06 06:31:16');
+insert into employee (emp_id, emp_name, email, name_grade, join_date) values (7, 72, 'thelgass6@plala.or.jp', 'Scaly-breasted lorikeet', '2018-12-14 23:38:20');
+insert into employee (emp_id, emp_name, email, name_grade, join_date) values (8, 38, 'jtetley7@skype.com', 'King vulture', '2019-08-09 16:10:10');
+insert into employee (emp_id, emp_name, email, name_grade, join_date) values (9, 6, 'arizzo8@bizjournals.com', 'Macaw, blue and yellow', '2019-04-15 07:59:00');
+insert into employee (emp_id, emp_name, email, name_grade, join_date) values (10, 73, 'mjaniemailc9@cdc.gov', 'Bohor reedbuck', '2019-06-22 03:03:17');
+insert into employee (emp_id, emp_name, email, name_grade, join_date) values (11, 59, 'cpinckneya@npr.org', 'Short-beaked echidna', '2019-03-12 05:11:01');
+insert into employee (emp_id, emp_name, email, name_grade, join_date) values (12, 29, 'bokieb@moonfruit.com', 'Asian water dragon', '2019-06-06 21:57:06');
+insert into employee (emp_id, emp_name, email, name_grade, join_date) values (13, 4, 'ssprionghallc@symantec.com', 'Seal, southern elephant', '2019-07-14 23:22:12');
+insert into employee (emp_id, emp_name, email, name_grade, join_date) values (14, 84, 'jpentelowd@t-online.de', 'Falcon, peregrine', '2019-03-09 21:12:08');
+insert into employee (emp_id, emp_name, email, name_grade, join_date) values (15, 26, 'llemonniere@php.net', 'Weaver, sociable', '2019-02-12 14:55:04');
+set foreign_key_checks=0;
+insert into department (idDepartment, emp_id, Name) values (1, 78, 'CSE');
+insert into department (idDepartment, emp_id, Name) values (2, 59, 'CSE');
+insert into department (idDepartment, emp_id, Name) values (3, 3, 'CSE');
+insert into department (idDepartment, emp_id, Name) values (4, 52, 'CSE');
+insert into department (idDepartment, emp_id, Name) values (5, 5, 'CSE');
+insert into department (idDepartment, emp_id, Name) values (6, 16, 'CSE');
+insert into department (idDepartment, emp_id, Name) values (7, 81, 'CSE');
+insert into department (idDepartment, emp_id, Name) values (8, 73, 'CSE');
+insert into department (idDepartment, emp_id, Name) values (9, 89, 'CSE');
+insert into department (idDepartment, emp_id, Name) values (10, 57, 'CSE');
+insert into department (idDepartment, emp_id, Name) values (11, 95, 'CSE');
+insert into department (idDepartment, emp_id, Name) values (12, 97, 'CSE');
+insert into department (idDepartment, emp_id, Name) values (13, 10, 'CSE');
+insert into department (idDepartment, emp_id, Name) values (14, 12, 'CSE');
+insert into department (idDepartment, emp_id, Name) values (15, 50, 'CSE');
+
+insert into balance (emp_id, idBalance, Bank_Balance, Loan_Amount) values (1, 2, 60, 8);
+insert into balance (emp_id, idBalance, Bank_Balance, Loan_Amount) values (2, 31, 44, 43);
+insert into balance (emp_id, idBalance, Bank_Balance, Loan_Amount) values (3, 74, 15, 89);
+insert into balance (emp_id, idBalance, Bank_Balance, Loan_Amount) values (4, 61, 59, 79);
+insert into balance (emp_id, idBalance, Bank_Balance, Loan_Amount) values (5, 56, 55, 56);
+insert into balance (emp_id, idBalance, Bank_Balance, Loan_Amount) values (6, 69, 56, 62);
+insert into balance (emp_id, idBalance, Bank_Balance, Loan_Amount) values (7, 38, 88, 90);
+insert into balance (emp_id, idBalance, Bank_Balance, Loan_Amount) values (8, 76, 79, 67);
+insert into balance (emp_id, idBalance, Bank_Balance, Loan_Amount) values (9, 5, 78, 40);
+insert into balance (emp_id, idBalance, Bank_Balance, Loan_Amount) values (10, 60, 10, 29);
+insert into balance (emp_id, idBalance, Bank_Balance, Loan_Amount) values (11, 40, 68, 18);
+insert into balance (emp_id, idBalance, Bank_Balance, Loan_Amount) values (12, 39, 60, 91);
+insert into balance (emp_id, idBalance, Bank_Balance, Loan_Amount) values (13, 50, 26, 45);
+insert into balance (emp_id, idBalance, Bank_Balance, Loan_Amount) values (14, 77, 19, 44);
+insert into balance (emp_id, idBalance, Bank_Balance, Loan_Amount) values (15, 3, 67, 33);
+
+
+insert into salary (emp_id, Salaryid, base, DA, TA, HRA, TAX, Gross) values (1, 398, 2, 60, 9, 67, 91, 75);
+insert into salary (emp_id, Salaryid, base, DA, TA, HRA, TAX, Gross) values (2, 718, 81, 10, 51, 1, 33, 94);
+insert into salary (emp_id, Salaryid, base, DA, TA, HRA, TAX, Gross) values (3, 952, 6, 2, 83, 27, 73, 81);
+insert into salary (emp_id, Salaryid, base, DA, TA, HRA, TAX, Gross) values (4, 176, 35, 61, 10, 54, 27, 44);
+insert into salary (emp_id, Salaryid, base, DA, TA, HRA, TAX, Gross) values (5, 505, 28, 73, 58, 27, 56, 71);
+insert into salary (emp_id, Salaryid, base, DA, TA, HRA, TAX, Gross) values (6, 536, 24, 17, 57, 15, 93, 26);
+insert into salary (emp_id, Salaryid, base, DA, TA, HRA, TAX, Gross) values (7, 146, 26, 1, 7, 45, 21, 30);
+insert into salary (emp_id, Salaryid, base, DA, TA, HRA, TAX, Gross) values (8, 870, 91, 18, 5, 71, 61, 94);
+insert into salary (emp_id, Salaryid, base, DA, TA, HRA, TAX, Gross) values (9, 856, 36, 71, 47, 78, 74, 55);
+insert into salary (emp_id, Salaryid, base, DA, TA, HRA, TAX, Gross) values (10, 554, 12, 31, 47, 41, 35, 60);
+insert into salary (emp_id, Salaryid, base, DA, TA, HRA, TAX, Gross) values (11, 455, 20, 51, 56, 53, 2, 89);
+insert into salary (emp_id, Salaryid, base, DA, TA, HRA, TAX, Gross) values (12, 97, 16, 18, 32, 80, 96, 14);
+insert into salary (emp_id, Salaryid, base, DA, TA, HRA, TAX, Gross) values (13, 786, 80, 20, 96, 47, 34, 69);
+insert into salary (emp_id, Salaryid, base, DA, TA, HRA, TAX, Gross) values (14, 89, 10, 93, 46, 48, 35, 40);
+insert into salary (emp_id, Salaryid, base, DA, TA, HRA, TAX, Gross) values (15, 562, 58, 33, 70, 62, 57, 14);
+
+insert into time_off (emp_id, id_time_off, Daysoff) values (1, 571, 9);
+insert into time_off (emp_id, id_time_off, Daysoff) values (2, 675, 67);
+insert into time_off (emp_id, id_time_off, Daysoff) values (3, 329, 77);
+insert into time_off (emp_id, id_time_off, Daysoff) values (4, 254, 32);
+insert into time_off (emp_id, id_time_off, Daysoff) values (5, 512, 12);
+insert into time_off (emp_id, id_time_off, Daysoff) values (6, 838, 9);
+insert into time_off (emp_id, id_time_off, Daysoff) values (7, 291, 82);
+insert into time_off (emp_id, id_time_off, Daysoff) values (8, 856, 31);
+insert into time_off (emp_id, id_time_off, Daysoff) values (9, 199, 74);
+insert into time_off (emp_id, id_time_off, Daysoff) values (10, 807, 42);
+insert into time_off (emp_id, id_time_off, Daysoff) values (11, 393, 35);
+insert into time_off (emp_id, id_time_off, Daysoff) values (12, 433, 92);
+insert into time_off (emp_id, id_time_off, Daysoff) values (13, 118, 91);
+insert into time_off (emp_id, id_time_off, Daysoff) values (14, 305, 41);
+insert into time_off (emp_id, id_time_off, Daysoff) values (15, 352, 47);
+
+select * from employee e, salary s
+where e.emp_id=s.emp_id and s.base=8000;
+
